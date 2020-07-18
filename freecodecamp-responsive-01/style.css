@@ -1,0 +1,42 @@
+body {
+}
+#main {
+  min-height: 400px;
+  width: 100%;
+  background: #fff;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto 1fr;
+  grid-gap: 10px;
+  grid-template-areas:
+      "header header header"
+      "img-div content content"
+      "footer footer footer";
+}
+#title {
+  background: black;
+  grid-area: header;
+  color: white;
+  padding: 10px;
+}
+#img-div {
+  grid-area: img-div;
+}
+#image { 
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+#tribute-info { 
+  background: #c2dafc; 
+  padding: 10px;
+  grid-area: content;
+  font-family: sans-serif;
+  font-size: 12pt;
+  color: #2e63b3;
+}
+#img-caption { 
+  font-size: 10px;
+  font-family: serif;
+  text-align: center;
+}
