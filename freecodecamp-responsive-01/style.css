@@ -37,6 +37,9 @@ body {
   font-size: 12pt;
   color: #2e63b3;
 }
+#info-text {
+  margin: 20px;
+}
 #img-caption { 
   font-size: 10px;
   font-family: serif;
