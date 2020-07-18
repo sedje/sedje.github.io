@@ -14,7 +14,8 @@ body {
       "footer footer footer";
 }
 #title {
-  background: black;
+  border-radius: 20px;
+  background: linear-gradient(90deg, #3e6294, #c2dafc);
   grid-area: header;
   color: white;
   padding: 10px;
@@ -27,9 +28,10 @@ body {
   height: auto;
   display: block;
 }
-#tribute-info { 
+#tribute-info {
+  border-radius: 20px;	
   background: #c2dafc; 
-  padding: 10px;
+  padding: 40px, 10px, 10px, 10px;
   grid-area: content;
   font-family: sans-serif;
   font-size: 12pt;
