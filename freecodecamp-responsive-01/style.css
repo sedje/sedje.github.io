@@ -19,6 +19,7 @@ body {
   grid-area: header;
   color: white;
   padding: 10px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 #img-div {
   grid-area: img-div;
@@ -36,9 +37,12 @@ body {
   font-family: sans-serif;
   font-size: 12pt;
   color: #2e63b3;
+  
+
 }
 #info-text {
   margin: 20px;
+  
 }
 #img-caption { 
   font-size: 10px;
