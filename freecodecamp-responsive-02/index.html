@@ -11,25 +11,147 @@
                     <h1 id="title">CF-Athlete Q-Form</h1>
                 </div>
                 <div class="description">
-                    <p id="description">y</p>
+                    <p id="description">This form is intended to submit favorite workouts for CF-Athletes. Every athlete can submit its favorites, including benchmark times.</p>
+                    <p id="description">Additionaly, a freeform field is added to include any workout that you think should be added, please include a name there too.</p>
                 </div>
                 <div id="form">
                     <form id="survey-form">
+                        <div class="survey-form-personal">
                         <fieldset>
                             <legend>Personal details</legend> 
-                            <div class="survey-form-personal">
-                                <label for="name" id="name-label">Name:</label>
-                                <input id="name" type="text" required placeholder="name">
-                                <label for="email" id="email-label">E-mail:</label>
-                                <input id="email" type="email" required placeholder="Email address">
-                                <label for="number" id="number-label">CF-Number:</label>
-                                <input id="number" type="number" min=0 max=999999 required placeholder="Your CF-Number">
-                            </div>
-                            <div class="survey-form-preferences">
-                                
-                            </div>
-                            <button id="submit">Submit values</button>
+                            
+                                <div class="survey-form-personal-element">
+                                <label class="form-label" for="name" id="name-label">Name:</label>
+                                <input class="form-control" id="name" type="text" required placeholder="name">
+                                </div>
+                                <div class="survey-form-personal-element">
+                                    <label class="form-label" for="email" id="email-label">E-mail:</label>
+                                    <input class="form-control" id="email" type="email" required placeholder="Email address">
+                                </div>
+                                <div class="survey-form-personal-element">
+                                    <label class="form-label" for="number" id="number-label">CF-Number:</label>
+                                    <input class="form-control" id="number" type="number" min=0 max=999999 required placeholder="Your CF-Number">
+                                </div>
+                                <div class="survey-form-personal-element">
+                                    <label class="form-label" for="dropdown" id="gender-label">Gender</label>
+                                    <select class="form-control" id="dropdown" type="dropdown" required>
+                                        <option disabled="" selected="" value="">Select one of:</option>
+                                        <option>Male</option>
+                                        <option>Female</option>
+                                        <option>Other</option>
+                                        <option>Won't say</option>
+                                    </select>
+                                </div>
+                          
                         </fieldset>
+                        </div>
+                        <div class="survey-form-preferences">
+                            <fieldset>
+                                <legend>Preferences</legend>
+                                <div class="survey-form-preferences-radio">
+                                    <fieldset>
+                                        <legend>Favorite type of workout</legend>
+                                            <label for="workout-cardio">
+                                                <input id="workout-cardio" type="radio" name="workout" value="cardio">Cardio
+                                            </label>
+                                            <label for="workout-strength">
+                                                <input id="workout-strength" type="radio" name="workout" value="strenght">Strenght
+                                            </label>
+                                            <label for="workout-swim">
+                                                <input id="workout-swim" type="radio" name="workout" value="swim">Swim
+                                            </label>
+                                            <label for="workout-wod">
+                                                <input id="workout-wod" type="radio" name="workout" value="WOD">WOD
+                                            </label>
+                                    </fieldset>
+                                </div>
+                                <div class="survey-form-preferences-girls">
+                                    <fieldset>
+                                        <legend>Favorite 'girls' workout</legend>
+                                        <div class="girls">
+                                            <label for="amanda">
+                                                <input id="girls" type="checkbox" value="amanda">Amanda
+                                            </label>
+                                            <label for="angie">
+                                                <input id="girls" type="checkbox" value="angie">Angie
+                                            </label>
+                                            <label for="annie">
+                                                <input id="girls" type="checkbox" value="annie">Annie
+                                            </label>
+                                            <label for="barbara">
+                                                <input id="girls" type="checkbox" value="barbara">Barbara
+                                            </label>
+                                            <label for="chelsea">
+                                                <input id="girls" type="checkbox" value="chelsea">Chelsea
+                                            </label>
+                                        </div>
+                                        <div class="girls">
+                                            <label for="cindy">
+                                                <input id="girls" type="checkbox" value="cindy">Cindy
+                                            </label>
+                                            <label for="diane">
+                                                <input id="girls" type="checkbox" value="diane">Diane
+                                            </label>
+                                            <label for="elizabeth">
+                                                <input id="girls" type="checkbox" value="elizabeth">Elizabeth
+                                            </label>
+                                            <label for="eva">
+                                                <input id="girls" type="checkbox" value="eva">Eva
+                                            </label>
+                                            <label for="amanda">
+                                                <input id="girls" type="checkbox" value="amanda">Amanda
+                                            </label>
+                                            <label for="fran">
+                                                <input id="girls" type="checkbox" value="fran">Fran
+                                            </label>
+                                        </div>
+                                        <div class="girls">
+                                            <label for="grace">
+                                                <input id="girls" type="checkbox" value="grace">Grace
+                                            </label>
+                                            <label for="helen">
+                                                <input id="girls" type="checkbox" value="helen">Helen
+                                            </label>
+                                            <label for="isabel">
+                                                <input id="girls" type="checkbox" value="isabel">Isabel
+                                            </label>
+                                            <label for="jackie">
+                                                <input id="girls" type="checkbox" value="jackie">Jackie
+                                            </label>
+                                            <label for="karen">
+                                                <input id="girls" type="checkbox" value="karen">Karen
+                                            </label>
+                                        </div>
+                                        <div class="girls">
+                                            <label for="kelly">
+                                                <input id="girls" type="checkbox" value="kelly">Kelly
+                                            </label>
+                                            <label for="linda">
+                                                <input id="girls" type="checkbox" value="linda">Linda
+                                            </label>
+                                            <label for="lynne">
+                                                <input id="girls" type="checkbox" value="lynne">Lynne
+                                            </label>
+                                            <label for="mary">
+                                                <input id="girls" type="checkbox" value="mary">Mary
+                                            </label>
+                                            <label for="nancy">
+                                                <input id="girls" type="checkbox" value="nancy">Nancy
+                                            </label>
+                                            <label for="nicole">
+                                                <input id="girls" type="checkbox" value="nicole">Nicole
+                                            </label>
+                                        </div>
+                                    </fieldset>
+                                </div>    
+                                <div class="survey-form-preferences-element">
+                                    <label for="textarea" id="textarea-label" class="form-label">Any additional comments:</label>
+                                    <textarea id="textarea" type="textarea" class="form-control" placeholder="Additional comments"></textarea>
+                                </div>
+                            </fieldset>
+                        </div>
+                            <button id="submit">Submit values</button>
+                        
                     </form>
                 </div>
             </div>

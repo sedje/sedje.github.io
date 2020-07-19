@@ -1,5 +1,5 @@
 body {
-
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
 }
 #main { 
     display: grid;
@@ -34,12 +34,47 @@ body {
 .form {
 }
 #description { 
-    
+    padding: 10px;
+    margin: 10px;
 }
 .description {
-    background: blue; 
+    background: rgb(222, 222, 223); 
     grid-area: description;
 }
-.survey-form {
+#survey-form {
+    background: rgb(220, 241, 255)
+}
+fieldset { 
+    
+}
+.survey-form-preferences-girls {
     display: grid;
+    width: 100%;
+    margin: 10px 10px 0px 0px;
+    padding: 10px 10px 0px 0px;
+}
+.survey-form-personal-element {
+    display: flex;
+    min-height: 35px;
+    margin: 10px 10px 0px 0px;
+    padding: 10px 10px 0px 0px;
+    width: 100%;
+}
+.survey-form-preferences-element {
+    display: flex;
+    min-height: 35px;
+    margin: 10px 10px 0px 0px;
+    padding: 10px 10px 0px 0px;
+}
+.girls { 
+    display: flex;
+    
+    width: 100%;
+}
+.form-label {
+    width: 20%;
+}
+.form-control {
+    width: 80%;
+    background: rgb(220, 241, 255)
 }
