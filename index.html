@@ -1,14 +1,40 @@
 <!Doctype html>
 <html>
 	<head> 
-
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>My portfolio page</title>
+		<link rel="stylesheet" href="style.css">
+		<style>
+			@media (max-width: 400px) { 
+    		.nav {    
+        		background: rgb(255, 76, 45);
+    		}
+ 		}
+		</style>
 	</head>
 	<body>
-		<p># sedje.github.io
-		github.io website repo, for freecodecamp projects</p>
-		<ul>
-		  <li><a href="freecodecamp-responsive-01/">Responsive Project 01</a></li>
-		  <li><a href="freecodecamp-responsive-02/">Responsive Project 02</a></li>
-		</ul>
+		<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+		<nav id="navbar" class="nav">
+			<ul class="navlinks">
+				<li>
+					<a href="#myprojects">Projects</a>
+				</li>
+				<li>
+					<a id="profile-link" target="_blank" href="https://sedje.github.com"><i class="fab fa-github"></i>My Github Profile</a>
+				</li>
+			</ul>
+		</nav>
+		<section id="welcome-section" class="welcome-section">
+			<h1># sedje.github.io</h1>
+			<p>Welcome to my github.io website repo, dedicated to freecodecamp projects</p>
+		</section>
+		
+		<section id="projects">
+			<a id="myprojects"></a>
+			<ul>
+			<li class="project-tile"><a href="freecodecamp-responsive-01/">Responsive Project 01</a></li>
+			<li class="project-tile"><a href="freecodecamp-responsive-02/">Responsive Project 02</a></li>
+			</ul>
+		</section>
 	</body>
 </html>
