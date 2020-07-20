@@ -66,10 +66,15 @@ fieldset {
     margin: 10px 10px 0px 0px;
     padding: 10px 10px 0px 0px;
 }
+.survey-form-preferences-radio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
 .girls { 
-    display: flex;
-    
-    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 1px 1px;
 }
 .form-label {
     width: 20%;
