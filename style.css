@@ -51,6 +51,7 @@ nav li {
 }
 .project-tile { 
     width: 100px;
+    border-radius: 10px;
     height: 100px;
     margin: auto;
     text-align: center;
