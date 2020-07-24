@@ -57,3 +57,14 @@ h1, h2, h3, h4 {
     height: 300px;
     width: 400px;
 }
+.contact-form {
+    width: 400px;
+
+}
+.email {
+    width: 200px;
+}
+#message {
+    width: 400px; 
+    height: 300px;
+}

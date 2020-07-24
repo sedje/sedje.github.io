@@ -33,7 +33,7 @@
                     <h2 class="mission">Mission</h2>
                     <p class="company-text">The Rogue mission really is pretty simple when it comes to principles, but it’s also not the “easy” way—otherwise, everyone would be doing it. What good thing ever came easy, though? One step in front of the other, we will take the mountain. See you on the other side.</p>
                 </div>
-                <div class="company-tile-video"><iframe id="video" width="100%" height="100%" src="https://www.youtube.com/embed/3aCMGqA6_XY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <div class="company-tile-video"><iframe id="video" src="https://www.youtube.com/embed/3aCMGqA6_XY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
             </div>
         </section>
         <section id="products">
@@ -52,10 +52,19 @@
         </section>
         <section id="contact">
             <a id="contact"></a>
-            <form id="form" action="https://www.freecodecamp.com/email-submit">
-                <input type="email" name="email" id="email" placeholder="Please enter your e-mail address">
-                <input type="text" name="message" id="message" placeholder="Please enter your message here">
-                <input type="submit" id="submit" value="Submit">
+            <form id="form" class="contact-form" action="https://www.freecodecamp.com/email-submit">
+                <fieldset>
+                    <legend>Contact us</legend>
+                        <div class="email">
+                            <label for="email">E-mail address:</label>
+                            <input type="email" name="email" id="email" placeholder="Please enter your e-mail address">
+                        </div>
+                        <div class="message">
+                            <label for="message">Your message:</label>
+                            <input type="text" name="message" id="message" placeholder="Please enter your message here">
+                        </div>
+                        <input type="submit" id="submit" value="Submit">
+                </fieldset>
             </form>
         </section>
 
