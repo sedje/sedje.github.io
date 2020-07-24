@@ -16,7 +16,7 @@ body {
     z-index: 10;
 }
 .nav a {
-    font-size: 8pt;
+    font-size: 10pt;
 }
 .nav header {
     width: 30%;
@@ -40,10 +40,12 @@ section header {
     font-weight: bold;
     font-size: 18px;
     font-stretch: wider;
-    text-transform: lowercase;
+    text-transform: uppercase;
 }
 code { 
     font-family: 'Courier New', Courier, monospace;
     background-color: black;
     color: lime;
+    line-height: 1.4;
+    white-space: pre-wrap;
 }

