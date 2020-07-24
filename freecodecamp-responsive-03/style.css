@@ -18,8 +18,8 @@ nav {
     align-items: center;
     width: 100%;
 }
-nav .upper {
-    text-transform: capitalize;
+nav a {
+    text-transform: uppercase;
 }
 section { 
     display: flex;
