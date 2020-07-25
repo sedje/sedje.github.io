@@ -2,38 +2,31 @@ body {
     
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
 }
-.nav {
+nav {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
     position: fixed;
-    width: 10%;
+    width: 180px;
     height: 100vh;
     background: rgb(45, 196, 255);
     box-shadow: 0 2px 0 grey;
     top: 0;
     left: 0;
+    padding: 5px;
     z-index: 10;
 }
-.nav a {
+nav a {
+    display: block;
     font-size: 10pt;
 }
-.nav header {
+nav header {
     width: 30%;
     text-align: left;
 }
-.navlist {
-    display: flex;
-    margin-right: 2rem;
-}
-nav ul {
-    list-style: none;
-}
-nav li { 
-    display: inline;
-}
+
 main { 
-    margin-left: 10%;
+    margin-left: 190px;
 
 }
 section header { 
@@ -43,9 +36,15 @@ section header {
     text-transform: uppercase;
 }
 code { 
+    display: block;
     font-family: 'Courier New', Courier, monospace;
     background-color: black;
     color: lime;
     line-height: 1.4;
     white-space: pre-wrap;
+    padding: 20px;
+}
+code::selection {
+    color: black;
+    background-color: lime;
 }
