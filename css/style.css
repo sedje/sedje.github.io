@@ -1,0 +1,57 @@
+body {
+    font-family: SourceCodePro, Arial, sans-serif;
+    color: #000070;
+    margin: 0;
+}
+@font-face {
+    font-family: SourceCodePro;
+    src: url(fonts/SourceCodePro-Regular.ttf);
+    }
+@font-face {
+    font-family: SourceCodePro-Italic;
+    src: url(fonts/SourceCodePro-Italic.ttf);
+}
+.container, .container-text{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+nav {
+    display: block;
+    background: #00587a;
+    margin-bottom: 10px;
+    box-shadow: 0 5px 10px #00587a, 0 6px 6px #e7e7de;
+    border-radius: 5px;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+nav li {
+    float: left;
+    width: 50%;
+}
+nav li a {
+  display: block;
+  padding: 8px;
+  margin: 1px;
+  text-align: center;
+  color: #e7e7de;
+  background-color: #00587a;
+}
+a, a.visited, a.hover {
+    color: #0f3057
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #0f3057;
+}
+table {
+    border-spacing: 5px;
+    border-collapse: separate;
+    table-layout: fixed;
+}
+thead {
+    font-weight: bold;
+}
