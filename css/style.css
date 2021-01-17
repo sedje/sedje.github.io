@@ -56,7 +56,7 @@ thead {
     font-weight: bold;
 }
 /* NORMAL */
-@media screen (min-width: 900px) {
+@media (min-width: 900px) {
     .container-text {
         margin: 20px 20% 0 20%;
     }
@@ -82,7 +82,7 @@ thead {
 
 /* MOBILE */
 
-@media screen (max-width: 900px) {
+@media (max-width: 900px) {
     .container-text {
         margin: 0 0 0 0;
         max-width: 100%;
