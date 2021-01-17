@@ -6,7 +6,7 @@ body {
     width: 20px;
 }
 .main {
-    background: url(../images/network.svg) no-repeat right, linear-gradient(180deg, #0f3057, #e7e7de);
+    background: url(../images/network.svg) no-repeat bottom right, linear-gradient(180deg, #0f3057, #e7e7de);
     height: 100vh;
     display: grid;
 }
@@ -15,9 +15,16 @@ body {
     place-self: center;
     text-align: center;
     background-color: #fff;
-    background: rgba(255,255,255,.5);
+    background: rgba(255,255,255,.4);
     border-radius: 15px;
     padding: 10px;
+
+}
+@media (max-width: 900px) {
+    .main-text {
+        place-self: start center;
+        margin-top: 30px;
+    }
 }
 .profile-pic {
     border-radius: 50%;
