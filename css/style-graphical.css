@@ -13,9 +13,15 @@ body {
 .main-text {
     font-family: SourceCodePro-Italic;
     place-self: center;
-}
-.main-name {
     text-align: center;
+    background-color: #fff;
+    background: rgba(255,255,255,.5);
+    border-radius: 15px;
+    padding: 10px;
+}
+.profile-pic {
+    border-radius: 50%;
+     transform: scaleX(-1);
 }
 /* CSS FOR ABOUT SECTION */
 
