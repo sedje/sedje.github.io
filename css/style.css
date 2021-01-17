@@ -55,3 +55,60 @@ table {
 thead {
     font-weight: bold;
 }
+/* NORMAL */
+@media screen (min-width: 900px) {
+    .container-text {
+        margin: 20px 20% 0 20%;
+    }
+    .about-box {
+        flex: 1 0 33%;
+        min-height: 20vh;
+    }
+    .about {
+        height: 100vh;
+    }
+    .contact-main {
+        width: 50%;
+    }
+    .about-flex {
+        padding: 100px;
+    }
+    .about-box {
+        flex: 1 0 33%;
+        min-height: 20vh;
+    }
+}
+
+
+/* MOBILE */
+
+@media screen (max-width: 900px) {
+    .container-text {
+        margin: 0 0 0 0;
+        max-width: 100%;
+        width: 100%;
+    }
+    .contact-main {
+        width: 80%;
+    }
+
+    .about-box {
+        flex: 1 0 100%;
+        min-height: 20vh;
+    }
+    .about-flex {
+        justify-content: center;
+    }
+    .about-box {
+        flex: 1 0 80%;
+        min-height: 25vh;
+        max-width: 80%;
+        margin: 10 5 px;
+    }
+    body {
+        font-size: 80%;
+    }
+    .empty {
+        display: none
+    }
+}
